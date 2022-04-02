@@ -54,11 +54,11 @@ export default function TextForm(props) {
                 <h1>{props.heading}</h1>
                 <textarea className="form-control" id="exampleFormControlTextarea1" rows="8" value={text} onChange={changeText} style={{backgroundColor: props.mode==="light"?"white":"#212529d1", color: props.mode==="light"?"black":"white"}}></textarea>
             </div>
-            <button className={`btn btn-${props.mode==="dark"? "dark":"primary"} mx-1`} onClick={up}>Convert to UpperCase</button>
-            <button className={`btn btn-${props.mode==="dark"? "dark":"primary"} mx-1`} onClick={low}>Convert to LowerCase</button>
-            <button className={`btn btn-${props.mode==="dark"? "dark":"primary"} mx-1`} onClick={cap}>Convert to Cap</button>
-            <button className={`btn btn-${props.mode==="dark"? "dark":"primary"} mx-1`} onClick={copy}>Copy Text</button>
-            <button className={`btn btn-${props.mode==="dark"? "dark":"primary"} mx-1`} onClick={removeExtra}>Remove Extra Spaces</button>
+            <button className={`btn btn-${props.mode==="dark"? "dark":"primary"} mx-1 my-1`} onClick={up}>Convert to UpperCase</button>
+            <button className={`btn btn-${props.mode==="dark"? "dark":"primary"} mx-1 my-1`} onClick={low}>Convert to LowerCase</button>
+            <button className={`btn btn-${props.mode==="dark"? "dark":"primary"} mx-1 my-1`} onClick={cap}>Convert to Cap</button>
+            <button className={`btn btn-${props.mode==="dark"? "dark":"primary"} mx-1 my-1`} onClick={copy}>Copy Text</button>
+            <button className={`btn btn-${props.mode==="dark"? "dark":"primary"} mx-1 my-1`} onClick={removeExtra}>Remove Extra Spaces</button>
             <button className="btn btn-danger mx-1" onClick={clear}>Clear</button>
         </div>
         <div className="container my-3">
